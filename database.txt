@@ -1,0 +1,34 @@
+AUTO
+
+- marca : stringa - VARCHAR (100)
+- modello : stringa - VARCHAR (255)
+- categoria : stringa - VARCHAR (50)
+- condizione : intero - TINYINT
+- descrizione : stringa - TEXT
+- anno : intero - TINYINT
+- colore : stringa - VARCHAR (50)
+- porte : intero - TINYINT
+- posti : intero -TINYINT
+- km : intero - MEDIUMINT
+- carburante : 
+- cambio
+- prezzo
+- targa
+- optional
+- n_libretto
+
+
+
+
+ACQUIRENTE
+
+- nome
+- cognome
+- tipo_documento
+- n_documento
+- n_conto_corrente
+- data_vendita
+- tipo_pagamento
+- data_pagamento
+- valore_acconto
+- n_libretto
