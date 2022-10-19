@@ -5,30 +5,30 @@ AUTO
 - categoria : stringa - VARCHAR (50)
 - condizione : intero - TINYINT
 - descrizione : stringa - TEXT
-- anno : intero - TINYINT
+- anno : data - YEAR
 - colore : stringa - VARCHAR (50)
 - porte : intero - TINYINT
 - posti : intero -TINYINT
 - km : intero - MEDIUMINT
-- carburante : 
-- cambio
-- prezzo
-- targa
-- optional
-- n_libretto
+- carburante : intero - TINYINT
+- cambio : intero - TINYINT
+- prezzo : intero - MEDIUMINT
+- targa : stringa - VARCHAR (10)
+- optional : stringa - TEXT
+- n_libretto : stringa - VARCHAR (20)
 
 
 
 
 ACQUIRENTE
 
-- nome
-- cognome
-- tipo_documento
-- n_documento
-- n_conto_corrente
-- data_vendita
-- tipo_pagamento
-- data_pagamento
-- valore_acconto
-- n_libretto
+- nome : stringa - VARCHAR (255)
+- cognome : stringa - VARCHAR (255)
+- tipo_documento : stringa - VARCHAR (100)
+- n_documento : stringa - VARCHAR (50)
+- n_conto_corrente : stringa - VARCHAR (255)
+- data_vendita : data - DATE
+- tipo_pagamento : intero - TINYINT
+- data_pagamento : data - DATE
+- valore_acconto : intero - MEDIUMINT
+- n_libretto : stringa - VARCHAR (20)
