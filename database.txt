@@ -1,34 +1,36 @@
 AUTO
 
-- marca : stringa - VARCHAR (100)
-- modello : stringa - VARCHAR (255)
+- id : intero - MEDIUMINT - PRIMARY-KEY AUTOINCREMENT UNIQUE NOT-NULL
+- marca : stringa - VARCHAR (100) - NOT-NULL
+- modello : stringa - VARCHAR (255) - NOT-NULL
 - categoria : stringa - VARCHAR (50)
-- condizione : intero - TINYINT
+- condizione : intero - TINYINT - NOT-NULL
 - descrizione : stringa - TEXT
-- anno : data - YEAR
+- anno : data - YEAR - NOT-NULL
 - colore : stringa - VARCHAR (50)
 - porte : intero - TINYINT
-- posti : intero -TINYINT
-- km : intero - MEDIUMINT
-- carburante : intero - TINYINT
-- cambio : intero - TINYINT
-- prezzo : intero - MEDIUMINT
-- targa : stringa - VARCHAR (10)
+- posti : intero -TINYINT - NOT-NULL
+- km : intero - MEDIUMINT - NOT-NULL
+- carburante : intero - TINYINT - NOT-NULL
+- cambio : intero - TINYINT - NOT-NULL
+- prezzo : intero - MEDIUMINT - NOT-NULL
+- targa : stringa - VARCHAR (10) - NOT-NULL UNIQUE
 - optional : stringa - TEXT
-- n_libretto : stringa - VARCHAR (20)
+- n_libretto : stringa - VARCHAR (20) NOT-NULL UNIQUE
 
 
 
 
 ACQUIRENTE
 
-- nome : stringa - VARCHAR (255)
-- cognome : stringa - VARCHAR (255)
-- tipo_documento : stringa - VARCHAR (100)
-- n_documento : stringa - VARCHAR (50)
-- n_conto_corrente : stringa - VARCHAR (255)
-- data_vendita : data - DATE
-- tipo_pagamento : intero - TINYINT
-- data_pagamento : data - DATE
+- id : intero - MEDIUMINT - PRIMARY-KEY AUTOINCREMENT UNIQUE NOT-NULL
+- nome : stringa - VARCHAR (255) NOT-NULL
+- cognome : stringa - VARCHAR (255) NOT-NULL
+- tipo_documento : stringa - VARCHAR (100) NOT-NULL
+- n_documento : stringa - VARCHAR (50) NOT-NULL UNIQUE
+- n_conto_corrente : stringa - VARCHAR (255) NOT-NULL UNIQUE 
+- data_vendita : data - DATE NOT-NULL
+- tipo_pagamento : intero - TINYINT NOT-NULL
+- data_pagamento : data - DATE NOT-NULL
 - valore_acconto : intero - MEDIUMINT
-- n_libretto : stringa - VARCHAR (20)
+- n_libretto : stringa - VARCHAR (20) NOT-NULL
